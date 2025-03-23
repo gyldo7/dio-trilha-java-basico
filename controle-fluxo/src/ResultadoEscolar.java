@@ -11,5 +11,14 @@ public class ResultadoEscolar {
         } else {
             System.out.println("Reprovado");
         }
+
+    //Operador ternario 
+    //Cenario 1
+    String resultado1 = (nota >=7) ? "Aprovado" : "Reprovado";
+	System.out.println(resultado1);
+    
+    //Cenario 2
+    String resultado2 = (nota >=7) ? "Aprovado" : nota >=5 && nota <7 ? "Recuperação" : "Reprovado";
+	System.out.println(resultado2);
     }
 }
